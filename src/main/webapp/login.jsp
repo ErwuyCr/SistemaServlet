@@ -31,7 +31,7 @@
 					</div>
 					<div class="row"> 
 						<div class="col-12 text-white" style="background-color: #634293;">
-							<form action="/login" method="post" class="pt-4">
+							<form action="/Home" method="post" class="pt-4">
 								<div class="form-group">
 									<label for="">Usuario</label>
 									<input class="form-control" type="text" name="user">

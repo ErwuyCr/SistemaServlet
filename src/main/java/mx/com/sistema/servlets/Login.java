@@ -1,4 +1,4 @@
-package Login;
+package mx.com.sistema.servlets;
 
 import java.io.IOException;
 
@@ -40,9 +40,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
-		
+		// TODO Auto-generated method stub	
 		
 		String user = request.getParameter("user");
 		String pass = request.getParameter("pass");
@@ -50,7 +48,7 @@ public class Login extends HttpServlet {
 		
 		if(user.equals(USER) && pass.equals(PASSWORD)) {
 			System.out.println("Llegue a la funcion");
-			RequestDispatcher miDispacher = request.getRequestDispatcher("/private/usuarios/crearUsuario.jsp");
+			RequestDispatcher miDispacher = request.getRequestDispatcher("/private/inicio/index.jsp");
 			miDispacher.forward(request, response);
 		}
 		

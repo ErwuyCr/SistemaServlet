@@ -37,21 +37,19 @@
 								href="#Sub_Usuario" aria-expanded="false" aria-controls="Sub_Usuario">Usuario</a>
 
 							<a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-								href="/CrearUsuario" aria-controls="profile">Crear
-								Usuario</a>
+								href="CrearUsuario" aria-controls="profile">Crear Usuario</a>
 
 							<a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-								href="webpage/listarUsuario.jsp" aria-controls="profile">Listar
-								Usuario</a>
+								href="ListarUsuarios" aria-controls="profile">Listar Usuario</a>
 
 							<a class="list-group-item list-group-item-action" data-toggle="collapse" href="#Sub_Role"
 								aria-expanded="false" aria-controls="Sub_Role">Roles</a>
 
 							<a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-								href="webpage/crearRoles.jsp" aria-controls="profile">Crear Roles</a>
+								href="CrearRol" aria-controls="profile">Crear Roles</a>
 
 							<a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-								href="webpage/listarRoles.jsp" aria-controls="profile">Listar Roles</a>
+								href="ListarRoles" aria-controls="profile">Listar Roles</a>
 						</div>
 					</div>
 				</div>

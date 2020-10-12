@@ -27,29 +27,29 @@
         <div class="row h-100">
             <nav id="sideBar" class="col-sm-2 h-100 bg-light pt-2 border-right">
                 <div class="side-header d-flex justify-content-center">
-                    <img src="lion_logo.png" class="img-fluid mb-2" width="100" height="100" alt="logo">
+                    <img src="resources/images/lion_logo.png" class="img-fluid mb-2" width="100" height="100" alt="logo">
                 </div>
                 <div class="menu row">
                     <div class="col-12">
                         <div class="list-group">
-                            <a class="list-group-item list-group-item-action" href="../index.jsp"
+                            <a class="list-group-item list-group-item-action" href="Home"
                                 aria-controls="home">Home</a>
 
                             <a class="list-group-item list-group-item-action " data-toggle="collapse"
                                 href="#Sub_Usuario" aria-expanded="false" aria-controls="Sub_Usuario">Usuario</a>
 
                             <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-                                href="crearUsuario.jsp" aria-controls="profile">Crear Usuario</a>
+                                href="CrearUsuario" aria-controls="profile">Crear Usuario</a>
                             <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-                                href="listarUsuario.jsp" aria-controls="profile">Listar Usuario</a>
+                                href="ListarUsuarios" aria-controls="profile">Listar Usuario</a>
 
                             <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#Sub_Role"
                                 aria-expanded="false" aria-controls="Sub_Role">Roles</a>
 
                             <a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-                                href="crearRoles.jsp" aria-controls="profile">Crear Roles</a>
+                                href="CrearRol" aria-controls="profile">Crear Roles</a>
                             <a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-                                href="listarRoles.jsp" aria-controls="profile">Listar Roles</a>
+                                href="ListarRoles" aria-controls="profile">Listar Roles</a>
                         </div>
                     </div>
                 </div>

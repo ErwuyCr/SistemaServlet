@@ -32,24 +32,24 @@
                 <div class="menu row">
                     <div class="col-12">
                         <div class="list-group">
-                        <a class="list-group-item list-group-item-action" href="../index.jsp"
+                        <a class="list-group-item list-group-item-action" href="Home"
                                 aria-controls="home">Home</a>
 
                             <a class="list-group-item list-group-item-action " data-toggle="collapse"
                                 href="#Sub_Usuario" aria-expanded="false" aria-controls="Sub_Usuario">Usuario</a>
 
                             <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-                                href="crearUsuario.jsp" aria-controls="profile">Crear Usuario</a>
+                                href="#" aria-controls="profile">Crear Usuario</a>
                             <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-                                href="listarUsuario.jsp" aria-controls="profile">Listar Usuario</a>
+                                href="ListarUsuarios" aria-controls="profile">Listar Usuario</a>
 
                             <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#Sub_Role"
                                 aria-expanded="false" aria-controls="Sub_Role">Roles</a>
 
                             <a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-                                href="crearRoles.jsp" aria-controls="profile">Crear Roles</a>
+                                href="CrearRol" aria-controls="profile">Crear Roles</a>
                             <a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-                                href="listarRoles.jsp" aria-controls="profile">Listar Roles</a>
+                                href="ListarRoles" aria-controls="profile">Listar Roles</a>
                         </div>
                     </div>
                 </div>
