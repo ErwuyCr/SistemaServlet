@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <title>CrearUsuario</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
@@ -27,29 +27,29 @@
         <div class="row h-100">
             <nav id="sideBar" class="col-sm-2 h-100 bg-light pt-2 border-right">
                 <div class="side-header d-flex justify-content-center">
-                    <img src="resources/images/lion_logo.png" class="img-fluid mb-2" width="100" height="100" alt="logo">
+                    <img src="resources/images/lion_logo.png" class="img-fluid mb-2" width="100" height="100"
+                        alt="logo">
                 </div>
                 <div class="menu row">
                     <div class="col-12">
                         <div class="list-group">
-                        <a class="list-group-item list-group-item-action" href="Home"
-                                aria-controls="home">Home</a>
+                            <a class="list-group-item list-group-item-action" href="Home" aria-controls="home">Home</a>
 
                             <a class="list-group-item list-group-item-action " data-toggle="collapse"
                                 href="#Sub_Usuario" aria-expanded="false" aria-controls="Sub_Usuario">Usuario</a>
 
-                            <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
-                                href="#" aria-controls="profile">Crear Usuario</a>
+                            <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse" href="#"
+                                aria-controls="profile">Crear Usuario</a>
                             <a id="Sub_Usuario" class="list-group-item list-group-item-action collapse"
                                 href="ListarUsuarios" aria-controls="profile">Listar Usuario</a>
 
                             <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#Sub_Role"
                                 aria-expanded="false" aria-controls="Sub_Role">Roles</a>
 
-                            <a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-                                href="CrearRol" aria-controls="profile">Crear Roles</a>
-                            <a id="Sub_Role" class="list-group-item list-group-item-action collapse"
-                                href="ListarRoles" aria-controls="profile">Listar Roles</a>
+                            <a id="Sub_Role" class="list-group-item list-group-item-action collapse" href="CrearRol"
+                                aria-controls="profile">Crear Roles</a>
+                            <a id="Sub_Role" class="list-group-item list-group-item-action collapse" href="ListarRoles"
+                                aria-controls="profile">Listar Roles</a>
                         </div>
                     </div>
                 </div>
@@ -61,25 +61,25 @@
                 </div>
                 <div class="row p-5">
                     <div class="col-12">
-                        <form>
+                        <form action="CrearUsuario" method="post">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputName">Nombre</label>
-                                    <input type="text" class="form-control" id="inputName">
+                                    <input type="text" class="form-control" id="inputName" name="nombre">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputLastName">Apellidos</label>
-                                    <input type="text" class="form-control" id="inputLastName">
+                                    <input type="text" class="form-control" id="inputLastName" name="apellido">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputRoles">Roles</label>
-                                    <input type="text" class="form-control" id="inputNivel">
+                                    <input type="text" class="form-control" id="inputNivel" name="rol">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputNivel">Nivel</label>
-                                    <select id="inputNivel" class="form-control">
+                                    <select id="inputNivel" class="form-control" name="nivel">
                                         <option selected>Junior</option>
                                         <option>Middle</option>
                                         <option>Senior</option>

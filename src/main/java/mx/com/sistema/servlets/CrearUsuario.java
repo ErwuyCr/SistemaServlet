@@ -1,12 +1,12 @@
 package mx.com.sistema.servlets;
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import mx.com.sistema.models.Usuario;
 
 /**
  * Servlet implementation class CrearUsuario
@@ -41,7 +41,14 @@ public class CrearUsuario extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
+		Usuario u1 = new Usuario();
 		
+		u1.setNombre(request.getParameter("nombre"));
+		u1.setApellido(request.getParameter("apellido"));
+		u1.setRoles(request.getParameter("rol"));
+		u1.setNivel(request.getParameter("nivel"));
+		
+		System.out.println(u1.toString());
 		
 	}
 

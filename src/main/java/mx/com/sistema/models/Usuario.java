@@ -1,18 +1,16 @@
 package mx.com.sistema.models;
 
-import java.util.List;
-
 public class Usuario {
 	private String nombre;
 	private String apellido;
-	private List<String> roles;
+	private String roles;
 	private String nivel;
 	
 	public Usuario() {
 		
 	}
 	
-	public Usuario(String nombre, String apellido, List<String> roles, String nivel) {
+	public Usuario(String nombre, String apellido, String roles, String nivel) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.roles = roles;
@@ -31,10 +29,10 @@ public class Usuario {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	public List<String> getRoles() {
+	public String getRoles() {
 		return roles;
 	}
-	public void setRoles(List<String> roles) {
+	public void setRoles(String roles) {
 		this.roles = roles;
 	}
 	public String getNivel() {
@@ -42,6 +40,11 @@ public class Usuario {
 	}
 	public void setNivel(String nivel) {
 		this.nivel = nivel;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [nombre=" + nombre + ", apellido=" + apellido + ", roles=" + roles + ", nivel=" + nivel + "]";
 	}
 	
 
