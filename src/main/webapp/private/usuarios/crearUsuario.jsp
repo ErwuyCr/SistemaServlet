@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>    
+    
 <!DOCTYPE html>
 <html lang="es">
 
@@ -65,11 +67,11 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputName">Nombre</label>
-                                    <input type="text" class="form-control" id="inputName" name="nombre">
+                                    <input type="text" class="form-control" id="inputName" name="nombre" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputLastName">Apellidos</label>
-                                    <input type="text" class="form-control" id="inputLastName" name="apellido">
+                                    <input type="text" class="form-control" id="inputLastName" name="apellido" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -91,7 +93,21 @@
                                 <button type="submit" class="btn btn-primary">Guardar</button>
                                 <button type="button" class="btn btn-danger ml-2">Cancelar</button>
                             </div>
-                        </form>
+                        </form>                                          
+                        
+                        
+                        
+		                <c:if test="${usuarioCreado eq 1}">
+		   					<p>Usuario Creado<p>
+						</c:if>                       
+                        <%--
+                        	if(request.getParameter("usuarioCreado")!=null && Integer.parseInt(request.getParameter("usuarioCreado"))==1){
+								out.println("Usuario Creado");
+							}
+							else{
+								out.println("Usuario No creado");
+							}
+						--%>
 
                     </div>
                 </div>

@@ -27,6 +27,9 @@ public class ListarUsuarios extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		
+		
 		RequestDispatcher miDispacher = request.getRequestDispatcher("private/usuarios/listarUsuarios.jsp");
 		miDispacher.forward(request, response);
 	}

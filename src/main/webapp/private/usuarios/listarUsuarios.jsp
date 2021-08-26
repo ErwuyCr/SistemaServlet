@@ -86,14 +86,8 @@ body {
 								<tr>
 									<td>Erwuy</td>
 									<td>Capistran Romero</td>
-									<td>Super Admin</td>
-									<td>Senior</td>
-								</tr>
-								<tr>
-									<td>Juan</td>
-									<td>Gilthg Jefferson</td>
-									<td>Contador</td>
-									<td>Junior</td>
+									<td></td>
+									<td></td>
 								</tr>
 							</tbody>
 						</table>
