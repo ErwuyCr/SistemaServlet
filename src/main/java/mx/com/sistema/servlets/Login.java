@@ -48,7 +48,7 @@ public class Login extends HttpServlet {
 		
 		if(user.equals(USER) && pass.equals(PASSWORD)) {
 			System.out.println("Llegue a la funcion");
-			RequestDispatcher miDispacher = request.getRequestDispatcher("/private/inicio/index.jsp");
+			RequestDispatcher miDispacher = request.getRequestDispatcher("private/inicio/index.jsp");
 			miDispacher.forward(request, response);
 		}
 		
