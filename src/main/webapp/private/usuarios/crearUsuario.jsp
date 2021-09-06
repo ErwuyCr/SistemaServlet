@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>    
+
     
 <!DOCTYPE html>
 <html lang="es">
@@ -96,18 +96,21 @@
                         </form>                                          
                         
                         
+                 
+						                       
                         
-		                <c:if test="${usuarioCreado eq 1}">
-		   					<p>Usuario Creado<p>
-						</c:if>                       
-                        <%--
-                        	if(request.getParameter("usuarioCreado")!=null && Integer.parseInt(request.getParameter("usuarioCreado"))==1){
-								out.println("Usuario Creado");
+                        <%
+                        	if(request.getAttribute("usuarioCreado")!=null){
+                        		boolean usuarioCreado = (Boolean)request.getAttribute("usuarioCreado");
+                        		if(usuarioCreado){
+                        			out.println("Usuario Creado");
+                        		}else{
+                        			out.println("Usuario No creado");
+                        		}								
 							}
-							else{
-								out.println("Usuario No creado");
-							}
-						--%>
+
+						%>
+						
 
                     </div>
                 </div>
